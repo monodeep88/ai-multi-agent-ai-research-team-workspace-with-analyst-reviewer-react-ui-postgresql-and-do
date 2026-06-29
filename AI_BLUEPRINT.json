@@ -1,0 +1,148 @@
+{
+  "mode": "ai",
+  "project_title": "Research Team Workspace",
+  "short_description": "A collaborative workspace for research teams with AI-powered analyst and reviewer tools",
+  "domain_summary": "{'description': 'Research Team Workspace is a platform designed to facilitate collaboration and productivity among research teams. It provides AI-powered tools for analysts and reviewers to streamline research processes, improve accuracy, and enhance decision-making.', 'key_features': ['Collaborative workspace for research teams', 'AI-powered analyst and reviewer tools', 'Automated research process management', 'Real-time feedback and collaboration', 'Enhanced decision-making and accuracy']}",
+  "user_persona": "Research Team Lead: A team lead responsible for overseeing research projects and ensuring timely completion.",
+  "architecture_notes": [
+    "The architecture is designed to ensure scalability, reliability, and maintainability."
+  ],
+  "backend_modules": [
+    "Analyst Agent: AI-powered tool for analysts to streamline research processes",
+    "Reviewer Agent: AI-powered tool for reviewers to enhance decision-making accuracy",
+    "Database Module: PostgreSQL database for data storage and retrieval"
+  ],
+  "frontend_features": [
+    "Collaborative Workspace: Real-time collaboration and feedback for research teams",
+    "Research Process Management: Automated research process management for analysts and reviewers",
+    "Decision-Making Tools: AI-powered decision-making tools for reviewers"
+  ],
+  "data_sources": [
+    "Research Data: Data collected from research projects",
+    "Team Feedback: Feedback from team members on research projects"
+  ],
+  "testing_strategy": [
+    "The testing strategy involves unit testing, integration testing, and UI testing."
+  ],
+  "starter_questions": [
+    "{'question': 'What is the research project objective?', 'answer': 'To develop a collaborative workspace for research teams with AI-powered analyst and reviewer tools.'}",
+    "{'question': 'What are the key features of the Research Team Workspace?', 'answer': 'Collaborative workspace, AI-powered analyst and reviewer tools, automated research process management, real-time feedback and collaboration, and enhanced decision-making and accuracy.'}"
+  ],
+  "workflow_steps": [
+    "Research Project Planning: Define research project objectives and scope",
+    "Data Collection: Collect data from research projects",
+    "Analysis and Review: Analyze and review research data using AI-powered tools",
+    "Decision-Making: Make decisions based on analysis and review results"
+  ],
+  "business_rules": [
+    "To ensure effective research process management",
+    "To ensure reliable analysis and review results",
+    "To ensure informed decision-making"
+  ],
+  "sample_documents": [
+    {
+      "filename": "research_project_plan.md",
+      "content": "Research Project Plan\n\nObjective: To develop a collaborative workspace for research teams with AI-powered analyst and reviewer tools.\n\nScope: The project scope includes developing a collaborative workspace, AI-powered analyst and reviewer tools, automated research process management, real-time feedback and collaboration, and enhanced decision-making and accuracy."
+    },
+    {
+      "filename": "data_collection_protocol.md",
+      "content": "Data Collection Protocol\n\nObjective: To collect accurate and complete data from research projects.\n\nScope: The data collection protocol includes collecting data from research projects, ensuring data accuracy and completeness, and storing data in a secure database."
+    }
+  ],
+  "tool_catalog": [
+    {
+      "name": "React",
+      "description": "A JavaScript library for building user interfaces"
+    },
+    {
+      "name": "PostgreSQL",
+      "description": "A relational database management system"
+    },
+    {
+      "name": "Docker",
+      "description": "A containerization platform for deploying applications"
+    }
+  ],
+  "agent_plan": [
+    {
+      "name": "Architecture Agent",
+      "role": "Define app boundaries, data flow, runtime stack, and integration points.",
+      "outputs": [
+        "The architecture is designed to ensure scalability, reliability, and maintainability."
+      ]
+    },
+    {
+      "name": "Backend Agent",
+      "role": "Design FastAPI modules, service contracts, validation, and error handling.",
+      "outputs": [
+        "Analyst Agent: AI-powered tool for analysts to streamline research processes",
+        "Reviewer Agent: AI-powered tool for reviewers to enhance decision-making accuracy",
+        "Database Module: PostgreSQL database for data storage and retrieval"
+      ]
+    },
+    {
+      "name": "Frontend Agent",
+      "role": "Design React screens, state flow, controls, and user feedback states.",
+      "outputs": [
+        "Collaborative Workspace: Real-time collaboration and feedback for research teams",
+        "Research Process Management: Automated research process management for analysts and reviewers",
+        "Decision-Making Tools: AI-powered decision-making tools for reviewers"
+      ]
+    },
+    {
+      "name": "Database Agent",
+      "role": "Design persistence models, sample data, indexes, and audit records.",
+      "outputs": [
+        "Run history",
+        "Source document metadata",
+        "Generated workflow audit records"
+      ]
+    },
+    {
+      "name": "Testing Agent",
+      "role": "Define contract tests, smoke tests, and generated project validation.",
+      "outputs": [
+        "The testing strategy involves unit testing, integration testing, and UI testing."
+      ]
+    },
+    {
+      "name": "DevOps Agent",
+      "role": "Define environment variables, Docker workflow, and repository packaging.",
+      "outputs": [
+        "Docker-ready project",
+        "Environment sample file",
+        "GitHub repository upload"
+      ]
+    },
+    {
+      "name": "Reviewer Agent",
+      "role": "Review the generated plan for completeness, security, and portfolio quality.",
+      "outputs": [
+        "Research Project Planning: Define research project objectives and scope",
+        "Data Collection: Collect data from research projects",
+        "Analysis and Review: Analyze and review research data using AI-powered tools",
+        "Decision-Making: Make decisions based on analysis and review results"
+      ]
+    }
+  ],
+  "model_provider": "groq",
+  "model_name": "llama-3.1-8b-instant",
+  "fallback_reason": "OpenAI limit reached. Automatically switched to Groq.",
+  "architecture": "Research Team Assistant",
+  "architecture_template_id": 22,
+  "architecture_template_path": "templates/multi-agent-ai/research-team-assistant",
+  "architecture_description": "Research Team Assistant for multi-role research synthesis.",
+  "architecture_version": "1.0",
+  "architecture_origin": "built_in",
+  "architecture_quality_score": 100,
+  "architecture_evolution_notes": "",
+  "architecture_technology": null,
+  "architecture_source_version": null,
+  "validation_pipeline": [
+    "pytest",
+    "npm install",
+    "npm run build",
+    "docker compose config",
+    "docker compose build"
+  ]
+}
